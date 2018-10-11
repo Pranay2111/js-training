@@ -5,11 +5,11 @@ var myBtn = document.querySelector('button');
 
 myBtn.onclick = function(){
     alert("Hello World!");
-}
+}  
 
 document.addEventListener("DOMContentLoaded", function(event) {
     // Your code to run since DOM is loaded and ready
-    alert('just a sec..');    
+    alert('just a sec..');   
 });
 
 window.onbeforeunload = function(e){
