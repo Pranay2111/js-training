@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>HTML Form Elements</title>
+    </head>
+    <body>
+        <form name="login" action="/server" method="POST">
+            <label>Name: </label>
+            <input name="name" type="email" placeholder="Name" required>
+
+            <input name="some" type="" placeholder="xyz" required>
+
+            <label>Location: </label>
+            <select id="ddlViewBy">
+                <option value="1">test1</option>
+                <option value="2" selected="selected">test2</option>
+                <option value="3">test3</option>
+            </select>
+
+            <input type="file" name="profilepic">
+
+            <button>Submit</button>
+
+        </form>
+
+        <script>
+            // Form submit using JS
+            var frm = document.forms.login;
+
+            // AJAX form submit
+            // read the form data, create xhr request - pass data to it
+            console.log(frm);
+
+            var select = document.getElementById("ddlViewBy");
+            var strUser = select.options[select.selectedIndex].value;
+            console.log(strUser);
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 
+    form encoded data
+    multipart form data
+
+    GET : Secure
+-->

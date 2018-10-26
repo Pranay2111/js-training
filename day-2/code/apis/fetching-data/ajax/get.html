@@ -10,9 +10,10 @@
 
 <p id="demo"></p>
 
+<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
 
 <script>
-function loadDoc() {
+
   var xhttp = new XMLHttpRequest();
   // open(method, url, async) 	Specifies the type of request
       // method: the type of request: GET or POST
@@ -26,9 +27,10 @@ function loadDoc() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "http://calctest.iesim.biz/operations", true);
-  xhttp.send();
-}
+  function loadDoc() {
+    xhttp.open("GET", "http://calctest.iesim.biz/operations", true);
+    xhttp.send();
+  }
 </script>
 
 </body>
